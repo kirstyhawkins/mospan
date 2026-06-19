@@ -2,24 +2,6 @@
 # M-OSPAN — Experiment 2
 # Script 1 of 3: Data Preprocessing
 # =============================================================================
-#
-# Description:
-#   Loads raw trial data from three recruitment cohorts (Prolific, Sona #1,
-#   Sona #2), each contributing three task conditions (classic ospan, rhythm
-#   span, tone/pitch span — arithmetic is the only secondary task in this
-#   experiment). Merges Gold-MSI Musical Training scores, applies inclusion
-#   criteria, recodes variables, and exports one analysis-ready dataset.
-#
-# Input files (per cohort: prolific, sona1, sona2):
-#   {cohort}_rhythm.csv    — rhythm span trials
-#   {cohort}_pitch.csv     — tone/pitch span trials
-#   {cohort}_classic.csv   — classic ospan trials
-#   {cohort}_gold.csv      — Gold-MSI questionnaire responses
-#
-# Output:
-#   exp2_clean_data.csv    — trial-level dataset ready for analysis
-#
-# =============================================================================
 
 library(tidyverse)
 
