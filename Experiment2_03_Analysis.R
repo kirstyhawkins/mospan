@@ -2,32 +2,6 @@
 # M-OSPAN — Experiment 2
 # Script 3 of 3: Analysis
 # =============================================================================
-#
-# Description:
-#   Full analysis pipeline for Experiment 2, which compares the rhythm and
-#   tone m-ospan versions against classic ospan using a single, matched
-#   secondary task (arithmetic) for a cleaner cross-condition comparison
-#   than Experiment 1. Three components:
-#     (1) Primary task accuracy — Bayesian beta regression, comparing nine
-#         models of increasing complexity (fixed effects only -> random
-#         intercepts -> random intercepts and slopes) via LOO-CV
-#     (2) SDT indices (d', c) for rhythm and tone — Bayesian Gaussian mixed
-#         models (NOT beta regression: d' and c are unbounded continuous
-#         measures, so a Gaussian family is required)
-#     (3) Storage-processing correlations between primary task accuracy and
-#         arithmetic (secondary task) accuracy, by condition
-#
-# Input:
-#   exp2_clean_data.csv  — from Script 1
-#   exp2_sdt_data.csv    — from Script 2
-#
-# Output:
-#   Table 1 — LOO model comparison for primary task accuracy
-#   Table 2 — Storage-processing correlations by condition
-#   Figures  — posterior predictive check, conditional effects, SDT by
-#              condition, storage-processing scatterplots
-#
-# =============================================================================
 
 library(tidyverse)
 library(brms)
